@@ -8,17 +8,17 @@ object ArrayBinarySearch extends App {
 
   def binarySearch(arr: Array[Int], item: Int): Int = {
     @tailrec
-    def search(array: Array[Int], item: Int): Int = {
+    def search(array: Array[Int]): Int = {
       if (array.length == 0) -1
       else if (array((array.length / 2)) == item)
         arr.indexOf(item)
       else if (array((array.length / 2)) > item)
-        search(array.slice(0, array.length / 2), item)
+        search(array.slice(0, array.length / 2))
       else
-        search(array.slice((array.length / 2 + 1), array.length), item)
+        search(array.slice((array.length / 2 + 1), array.length))
 
     }
-    search(arr, item)
+    search(arr)
   }
 
   println(binarySearch(array, args(0).toInt))
