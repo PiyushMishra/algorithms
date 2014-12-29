@@ -15,6 +15,10 @@ public class ArrayLinearSearchJava {
 
 		int data[] = new int[] { 10, 20, 30, 40, 50, 60, 71, 80, 90, 91 };
 
-		System.out.println(linearSerach(data,8954));
+		System.out.println(linearSerach(data, 8954));
 	}
 }
+
+/*
+ * time complexity is O(n)
+ */

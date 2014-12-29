@@ -20,3 +20,7 @@ object ArrayLinearSearch extends App {
 
   println(linearSearch(arr, 167))
 }
+
+/*
+time complexity is O(n)
+*/
