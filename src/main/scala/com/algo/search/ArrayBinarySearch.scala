@@ -25,3 +25,6 @@ object ArrayBinarySearch extends App {
   println(binarySearch(array, 0, array.length, args(0).toInt))
 }
 
+/*
+complexity of algo is O(logn)
+*/
