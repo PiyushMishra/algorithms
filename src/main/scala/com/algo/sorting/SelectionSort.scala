@@ -33,7 +33,9 @@ object SelectionSort extends App {
   def sort(array: Seq[Int], acc: Seq[Int]): Seq[Int] = {
     min(array, Seq()) match {
       case (`intmin`, _) => acc
-      case (x, xs) => sort(xs, acc.:+(x))
+      case (x, xs) => 
+        println(x,xs)
+        sort(xs, acc.:+(x))
     }
   }
 

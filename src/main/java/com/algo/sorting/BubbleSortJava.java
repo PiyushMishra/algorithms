@@ -1,6 +1,6 @@
 package com.algo.sorting;
 
-public class BubbleSort {
+public class BubbleSortJava {
 
 	public static void print(int numbers[]) {
 		for (int i = 0; i < numbers.length - 1; i++) {
